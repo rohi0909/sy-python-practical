@@ -1,0 +1,26 @@
+feedback=(input("enter your feedback:"))
+
+print("_______CUSTOMER FEEDBACK REPORT_____".center(70))
+print("___________________________________________________________")
+
+print("Original Feedback:".title())
+print("feedback",feedback)
+
+print("---------------------------------------------------------")
+
+print("FEEDBACK SUMMARY:")
+print("Total Character:", len(feedback))
+print("Total Word:", len(feedback.split()))
+print("Total Space:", feedback.count(" "))
+print("Total Exclmation marks:",feedback.title().count("!"))
+print("------------------------------------------------------------")
+print("formated feedback:".lstrip())
+print("uppercase feedback:",feedback.upper())
+print("lowercase feedback:",feedback.lower())
+print("Title feedback:",feedback.title())
+print("capitalize feedback:",feedback.capitalize())
+print("swapcase feedback:",feedback.swapcase())
+print("===============================================================")
+print("professional feedback:".capitalize())
+print("Words split=",feedback.split())
+print("Thank you for your valuabal feedback 🙏🙏🙏!!".center(85).upper())
