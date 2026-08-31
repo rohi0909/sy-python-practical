@@ -1,0 +1,21 @@
+# Student Score Filter and Update Program
+
+grades = [85, 72, 91, 68, 95]
+
+print("Original grades:", grades)
+
+# Ask the user for the index position
+index = int(input("Enter the index position to update (0-4): "))
+
+# Check if the index is valid
+if 0 <= index < len(grades):
+    # Ask for the new grade
+    new_grade = int(input("Enter the new grade: "))
+
+    # Update the grade
+    grades[index] = new_grade
+
+    # Display the corrected list
+    print("Corrected grades:", grades)
+else:
+    print("Invalid index position.")
