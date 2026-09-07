@@ -1,0 +1,19 @@
+def price_engine(asset_costs):
+    # Sort from highest to lowest
+    sorted_costs = sorted(asset_costs, reverse=True)
+
+    # Get the top three (or fewer if there aren't three)
+    top_three = sorted_costs[:3]
+
+    # Display results
+    print("Top 3 priciest assets:")
+    for cost in top_three:
+        print(f"{cost:.2f}")
+
+    return top_three
+
+
+# Example
+assets = [1250.75, 980.50, 3200.00, 1750.25, 450.80, 2890.40]
+
+price_engine(assets)

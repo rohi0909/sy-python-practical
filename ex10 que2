@@ -1,0 +1,24 @@
+# Active Inventory Catalog Manager
+
+inventory = [
+    "Laptop",
+    "Mouse",
+    "Keyboard",
+    "Monitor",
+    "Printer",
+    "Headphones",
+    "Webcam",
+    "USB Cable"
+]
+
+print("=== Inventory Catalog Manager ===")
+
+item = input("Enter the product name to search: ").strip()
+
+# Search for the item
+if item in inventory:
+    index = inventory.index(item)
+    print(f"Item found: {item}")
+    print(f"Index location: {index}")
+else:
+    print(f"Item '{item}' was not found in the inventory.")
